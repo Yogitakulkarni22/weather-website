@@ -1,0 +1,57 @@
+<!-- weather website using rapidapi -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Weather Up-to-date</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <!-- <h1 id="head">WEATHER UP-TO-DATE</h1> -->
+    <div class="card">
+      
+      <div class="search">
+        <input type="text" placeholder="Enter City Name" class="search-type" id="entercity"></input>
+        <button class="submit-btn" type="submit" id="submit">DISPLAY</button>   
+        <!-- <i class="fa-solid fa-magnifying-glass" id="submit"></i>  -->
+      </div>
+      <div class="weather">
+        <img src="cloud-rain.png" id="weather_icon">
+        <h1 id="temp1"><span id="temp">22</span></h1>
+
+        <p>feels like:<span id="feels_like">50°</span></p>
+
+        <h1 id="city"><span id="cityname">New York</span></h1>
+        <div class="details">
+          <div class="col">
+            <img src="humi1.png" class="img-humi">
+            <div>
+              <p id="humidity1"><span id="humidity">50%</span></p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="wind.png" class="img-humi">
+            <div>
+              <p id="wind_speed1"><span id="wind_speed">6</span></p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+          <div class="col">
+            <p id="sunrise1">SunRise::<span id="sunrise">6</span></p><hr>
+            <p id="sunset1">SunSet::<span id="sunset">6</span></p>
+          </div>
+        </div>
+
+      </div>
+      
+      
+    
+    </div>
+ 
+    <script src="app.js"></script>
+  </body>
+</html>
